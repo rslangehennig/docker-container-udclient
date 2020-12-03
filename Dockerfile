@@ -15,5 +15,9 @@ run tar xzf ibm-java-jre-8.0-6.0-linux-x86_64.tgz
 run rm ibm-java-jre-8.0-6.0-linux-x86_64.tgz
 run mkdir -p /opt/ibm
 run mv ibm-java-x86* /opt/ibm
+# Install git
+yum update
+yum install git
+git --version
 # Run the specified command within the container.
 CMD [ "/bin/bash" ]
